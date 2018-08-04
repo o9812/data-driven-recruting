@@ -88,7 +88,6 @@ val ngramDataFrame = pipeline.fit(df_punctuation).transform(df_punctuation)
 > word count pairs 2017:
 ```
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
-
 (software engineer,795)
 (mso level,787)
 (computer science,733)
