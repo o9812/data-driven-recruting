@@ -18,6 +18,36 @@ We were able to extract output in the form of graphs that we would've liked to s
 
 `sqoop_data.sh`: sqoop command line. transder data from external MySQL server to Dumbo HDFS.
 `bada_visualization.ipynb`: the notebook is to do the visualizatin and plots
-
+***
 `main.scala`: main function of this project, run this script in the Perl.
+
+examples:
+
+> load data
+`+---------------------+--------------------+--------------------+--------------------+
+|candidateCreationDate|         resume_text|    resume_text_html| resume_text_cleaned|
++---------------------+--------------------+--------------------+--------------------+
+| 2007-01-19 12:36:...|<html><head><meta...|Name:Edward Horan...|Name Edward Horan...|
+| 2007-01-19 12:36:...|<html><head><meta...|&nbsp;Gaurava Sha...|  Gaurava Shah1 G...|
+| 2007-01-19 12:36:...|Name: Walter Rose...|Name: Walter Rose...|Name Walter Rosen...|
+| 2007-01-19 12:36:...|<p>&lt;!--  /* Fo...|&lt;!--  /* Font ...|        Font Defi...|
+| 2007-01-19 12:36:...|Name: Irene Hagen...|Name: Irene Hagen...|Name Irene Hagenb...|
+| 2007-01-19 12:28:...|<html><head><meta...|EricNorberg18Haml...|EricNorberg18Haml...|
+| 2007-01-19 12:28:...|<html><head><meta...|368Ontario Street...|368Ontario Street...|
+| 2007-01-19 12:27:...|<html><head><meta...|Name:GROSSMAN DAV...|Name GROSSMAN DAV...|
+| 2007-01-19 12:27:...|<html><head><meta...|Name:MANGLANI BHA...|Name MANGLANI BHA...|
+| 2007-01-19 12:24:...|<html><head><meta...|3 Riverbank Drive...|3 Riverbank Drive...|
+| 2007-01-19 12:20:...|<html><head><meta...|***Shewent on pre...|   Shewent  pregn...|
+| 2007-01-19 09:07:...|<html><head><meta...|Position Suitabil...|Position Suitabil...|
+| 2007-01-19 09:03:...|<html><head><meta...|EM/LM - SS -4/23&...|      4 23  Posit...|
+| 2007-01-18 15:40:...|<html><head><meta...|Position Suitabil...|Position Suitabil...|
+| 2007-01-18 15:08:...|<html><head><meta...|3rd submittal on ...|3rd submittal  th...|
+| 2007-01-18 14:52:...|<html><head><meta...|PositionSuitabili...|PositionSuitabili...|
+| 2007-01-18 14:47:...|<html><head><meta...|201-946-2559(617)...|201 946 2559 617 ...|
+| 2007-01-18 14:22:...|<html><head><meta...|646-226-6630vipul...|646 226 6630vipul...|
+| 2007-01-18 12:47:...|<p><!-- [if !mso]...|v\\:* {behavior:u...|      behavior ur...|
+| 2007-01-18 12:44:...|<html><head><meta...|****Meghe is gett...|    Meghe  gettin...|
++---------------------+--------------------+--------------------+--------------------+`
+
+
 
