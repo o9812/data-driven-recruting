@@ -1,4 +1,4 @@
-# [data-driven-recruting](https://github.com/o9812/data-driven-recruting/edit/master/README.md)
+# [data-driven-recruting](https://github.com/o9812/data-driven-recruting/blob/master/README.md)
 This project focus on HR data. We explore the resume data of each job candidates. Investigating the “buzz” words that were being used in resumes on any given time scale. It gives user insight how a hot resume should look like. Users also can see the trend of buzz words. By leveraging the scalability of big data platform, we believe that analysis over labor market data will provides excellent insights for recruiters.
 
 ***
