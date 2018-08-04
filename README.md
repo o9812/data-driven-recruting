@@ -10,7 +10,7 @@ We were able to extract output in the form of graphs that we would've liked to s
 
 `BDAD_output`: the folder include all examples of outputs.
 - `bar_chart`: bar charts of word distribution from 2007 to 2017/over 10 years.
-- `word_cloud`: wordcloud the font size represent the word frequency each year from 2007 to 2017/over 10 years.
+- `word_cloud`: wordcloud. The font size represents count numbers from 2007 to 2017/over 10 years. Here is an example in 2017.
 ![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/blob/master/BDAD_output/word_cloud/wrd_cnt_sort_2017.png)
 - `word_cnt`: the word count pairs outputs of spark from 2007 to 2017/over 10 years. ex: (software engineer,795), (mso level,787), (computer science,733), (sql server,556), (middot developed,520), (designed developed,481), (web services,474), (mso style,430), (front end,411), (real time,411), (font family,406), (software development,404)..
 - `newplot.png`: an example of bar chart of word trend.  
@@ -19,4 +19,3 @@ We were able to extract output in the form of graphs that we would've liked to s
 
 `main.scala`: main function of this project, we run this script in the Perl.
 
-`<asdfdsaf>`
