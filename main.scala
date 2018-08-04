@@ -60,43 +60,52 @@ val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreation
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2017")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2016-01-01", "2016-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2016")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2015-01-01", "2015-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2015")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2014-01-01", "2014-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2014")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2013-01-01", "2013-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2013")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2012-01-01", "2012-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2012")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2011-01-01", "2011-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2011")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2010-01-01", "2010-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2010")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2009-01-01", "2009-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2009")*/
+
 val df_resume_text_cleaned2 = df_resume_text_cleaned1.filter($"candidateCreationDate_date".between("2008-01-01", "2008-12-31"))
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 /** wrd_cnt_sort.saveAsTextFile("project_BDAD/output/wrd_cnt_sort2008")*/
-/** create rdd and do the word count */
+
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
 val wrd_cnt_sort = wrd_cnt.map(item=> item.swap).sortByKey(false, 1).map(item = > item.swap)
 val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
