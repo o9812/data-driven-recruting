@@ -19,7 +19,7 @@ We were able to extract output in the form of graphs that we would've liked to s
  - `examples/newplot.png`: an example of bar chart of buzz words distribution 2007-2017. These terms are continuously show in buzz words list every year. That is to say, they are popular over 10 years.
 ![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/blob/master/BDAD_output/example/buzzword07to17.png)
 - `examples/newplot.png`: an example of bar chart of buzz word trends.  
-![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/tree/master/BDAD_output/examples/newplot.png)
+![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/tree/master/BDAD_output/example/newplot.png)
 
 `sqoop_data.sh`: sqoop command line. transder data from external MySQL server to Dumbo HDFS.
 `bada_visualization.ipynb`: the notebook is to do the visualizatin and plots. Mainly using ```plotly``` external tool.
