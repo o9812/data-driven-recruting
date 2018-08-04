@@ -12,6 +12,7 @@ We were able to extract output in the form of graphs that we would've liked to s
 
 
 `newplot.png`: an example of bar chart of word trend.  
+![alt text](https://github.com/o9812/data-driven-recruting/blob/master/newplot.png)
 `main.scala`: main function of this project, we run this script in the Perl.
 
 
