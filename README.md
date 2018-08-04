@@ -17,7 +17,7 @@ We were able to extract output in the form of graphs that we would've liked to s
 ![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/blob/master/BDAD_output/newplot.png)
 
 `sqoop_data.sh`: sqoop command line. transder data from external MySQL server to Dumbo HDFS.
-`bada_visualization.ipynb`: the notebook is to do the visualizatin and plots
+`bada_visualization.ipynb`: the notebook is to do the visualizatin and plots. Mainly using ```plotly``` external tool.
 ***
 `main.scala`: main function of this project, run this script in the Perl.
 
