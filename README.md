@@ -11,11 +11,15 @@ We were able to extract output in the form of graphs that we would've liked to s
 
 `BDAD_output`: the folder include all examples of outputs.
 - `bar_chart`: bar charts of word distribution from 2007 to 2017/over 10 years.
-- `word_cloud`: wordcloud. The font size represents count numbers from 2007 to 2017/over 10 years. Here is an example in 2017.
+- `word_cloud`: wordcloud. The font size represents count numbers from 2007 to 2017. Here is an example in 2017.
 ![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/blob/master/BDAD_output/word_cloud/wrd_cnt_sort_2017.png)
 - `word_cnt`: the word count pairs outputs of spark from 2007 to 2017/over 10 years. ex: (software engineer,795), (mso level,787), (computer science,733), (sql server,556), (middot developed,520), (designed developed,481), (web services,474), (mso style,430), (front end,411), (real time,411), (font family,406), (software development,404)..
-- `newplot.png`: an example of bar chart of word trend.  
-![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/blob/master/BDAD_output/newplot.png)
+ - `examples/newplot.png`: an example of bar chart of buzz words distribution 2017. 
+ ![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/blob/master/BDAD_output/example/top2007.png)
+ - `examples/newplot.png`: an example of bar chart of buzz words distribution 2007-2017. These terms are continuously show in buzz words list every year. That is to say, they are popular over 10 years.
+![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/blob/master/BDAD_output/example/buzzword07to17.png)
+- `examples/newplot.png`: an example of bar chart of buzz word trends.  
+![an example of bar chart of word trend](https://github.com/o9812/data-driven-recruting/tree/master/BDAD_output/examples/newplot.png)
 
 `sqoop_data.sh`: sqoop command line. transder data from external MySQL server to Dumbo HDFS.
 `bada_visualization.ipynb`: the notebook is to do the visualizatin and plots. Mainly using ```plotly``` external tool.
