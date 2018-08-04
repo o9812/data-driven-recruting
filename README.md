@@ -24,6 +24,7 @@ We were able to extract output in the form of graphs that we would've liked to s
 examples:
 
 > load data
+```
 +---------------------+--------------------+--------------------+--------------------+
 |candidateCreationDate|         resume_text|    resume_text_html| resume_text_cleaned|
 +---------------------+--------------------+--------------------+--------------------+
@@ -48,6 +49,6 @@ examples:
 | 2007-01-18 12:47:...|<p><!-- [if !mso]...|v\\:* {behavior:u...|      behavior ur...|
 | 2007-01-18 12:44:...|<html><head><meta...|****Meghe is gett...|    Meghe  gettin...|
 +---------------------+--------------------+--------------------+--------------------+
-
+```
 
 
