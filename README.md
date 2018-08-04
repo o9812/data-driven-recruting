@@ -23,7 +23,7 @@ We were able to extract output in the form of graphs that we would've liked to s
 
 examples:
 
-> load data
+> load data into as sql.datafram
 ```
 +---------------------+--------------------+--------------------+--------------------+
 |candidateCreationDate|         resume_text|    resume_text_html| resume_text_cleaned|
@@ -51,4 +51,96 @@ examples:
 +---------------------+--------------------+--------------------+--------------------+
 ```
 
+> do the column operation: regextokenizer, stopwords, bigram
+```
+val ngramDataFrame = pipeline.fit(df_punctuation).transform(df_punctuation)
++--------------------+--------------------+
+|   resume_text_token|  resume_text_ngrams|
++--------------------+--------------------+
+|[name, edward, ho...|[name edward, edw...|
+|[gaurava, shah1, ...|[gaurava shah1, s...|
+|[name, walter, ro...|[name walter, wal...|
+|[font, definition...|[font definitions...|
+|[name, irene, hag...|[name irene, iren...|
+|[ericnorberg18ham...|[ericnorberg18ham...|
+|[368ontario, stre...|[368ontario stree...|
+|[name, grossman, ...|[name grossman, g...|
+|[name, manglani, ...|[name manglani, m...|
+|[3, riverbank, dr...|[3 riverbank, riv...|
+|[shewent, pregnan...|[shewent pregnanc...|
+|[position, suitab...|[position suitabi...|
+|[4, 23, positions...|[4 23, 23 positio...|
+|[position, suitab...|[position suitabi...|
+|[3rd, submittal, ...|[3rd submittal, s...|
+|[positionsuitabil...|[positionsuitabil...|
+|[201, 946, 2559, ...|[201 946, 946 255...|
+|[646, 226, 6630vi...|[646 226, 226 663...|
+|[behavior, url, d...|[behavior url, ur...|
+|[meghe, getting, ...|[meghe getting, g...|
++--------------------+--------------------+
+```
 
+> word count pairs 2017:
+```
+val wrd_cnt = df_resume_text_cleaned2.select("concatenate_list").rdd.map(x= > x.mkString.split("_")).flatMap(x= > (x)).filter(x = > x != "new york").map(x= > (x, 1)).reduceByKey((v1, v2) = > v1 + v2)
+
+(software engineer,795)
+(mso level,787)
+(computer science,733)
+(sql server,556)
+(middot developed,520)
+(designed developed,481)
+(web services,474)
+(mso style,430)
+(front end,411)
+(real time,411)
+(font family,406)
+(software development,404)
+(active directory,153)
+(best practices,152)
+(data warehouse,152)
+(technical skills,150)
+(third party,149)
+(operating systems,149)
+(design patterns,148)
+(middot managed,147)
+(unit testing,146)
+(web service,144)
+(css javascript,143)
+(application development,143)
+(new roman,173)
+(end end,169)
+(years experience,168)
+(web applications,168)
+(back end,167)
+(java j2ee,166)
+(number position,165)
+(level tab,165)
+(level text,165)
+(format bullet,165)
+(bullet mso,165)
+(ndash may,165)
+(tab stop,165)
+(number format,165)
+(position left,165)
+(javascript jquery,164)
+(team members,163)
+(project manager,161)
+(design implementation,159)
+(text mso,158)
+(institute technology,157)
+(middot experience,156)
+(stop none,156)
+(open source,154)
+(left margin,154)
+(middot involved,192)
+(ndash present,191)
+(professional experience,190)
+(margin left,186)
+(stored procedures,186)
+(object oriented,184)
+(science computer,184)
+(middot responsible,181)
+(none mso,175)
+...
+```
